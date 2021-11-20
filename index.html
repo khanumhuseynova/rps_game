@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSP GAME</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(41, 7, 41);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--BOOTSTRAP CSS-->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid bg-light mt-2">
+            <div class="container">
+                <h1 class="display-5 text-center">Rock Paper Scissors</h1>
+                <p class="lead text-center">Please select one of the 'R S P' (press) buttons to play</p>
+            </div>
+        </div>
+
+
+        <!--first column/section-->
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-5" class="player_1">
+                <div class="jumbotron jumbotron-fluid bg-light">
+                    <div class="container">
+                        <h1 class="h3 text-center">Player 1 (me)</h1>
+                        <h3 class="display-5 text-center" id="winorlose1">START</h3>
+                        <p class="lead text-center text-black-50 font-weight-bold" id="my_point">Point: 0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2" class="vs" id="vs" style="margin-top: 50px">
+                <h2 class="display-2 text-center mt-0 text-light">VS</h2>
+            </div>
+
+
+            <div class="col-md-5" class="player_2">
+                <div class="jumbotron jumbotron-fluid bg-light">
+                    <div class="container">
+                        <h1 class="h3 text-center">Player 2 (computer)</h1>
+                        <h3 class="display-5 text-center text" id="winorlose2">START</h3>
+                        <p class="lead text-center text-black-50 font-weight-bold" id="comp_point">Point: 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--second column/section-->
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-5" class="card_1">
+                <div class="card p-2 d-flex flex-column align-items-center bg-light">
+                    <img src="./Images/r.png" class="card-img-top" alt="rock" style="width:200px; height:auto;" alt="rock" id="player1Img">
+                    <div class="card-body">
+                        <h3 class="card-title">Rock</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-5" class="card_2">
+                <div class="card p-2 d-flex flex-column align-items-center bg-light">
+                    <img src="./Images/p.png" class="card-img-top" alt="rock" style="width:200px; height:auto;" alt="Paper" id="player2Img">
+                    <div class="card-body">
+                        <h3 class="card-title">Paper</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--JAVASCRIPT BOOTSTRAP-->
+
+        <script src=" ./index.js ">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF " crossorigin="anonymous "></script>
+
+        <script src='./index.js'>
+        </script>
+
+</body>
+
+</html>
