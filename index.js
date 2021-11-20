@@ -9,9 +9,11 @@ var winOrLoseInfoPanel1 = document.querySelector('#winorlose1')
 var winOrLoseInfoPanel2 = document.querySelector('#winorlose2')
 var player1Imgme = document.querySelector('#player1Img')
 var player2Imgcomp = document.querySelector('#player2Img')
+var player1nameme = document.querySelector("#name1")
+var player2namecomp = document.querySelector("#name2")
 
 
-
+console.log(player1nameme)
 
 
 function randomCompAttack(arr) {
@@ -41,6 +43,8 @@ function startGame(e) {
         console.log('Draw');
         console.log('----------------');
 
+
+
         winOrLoseInfoPanel1.innerHTML = 'DRAW'
         winOrLoseInfoPanel2.innerHTML = 'DRAW'
     } else if (userAttack === 'p' && compAttack === "r") {
@@ -48,9 +52,13 @@ function startGame(e) {
         console.log('Player 1 win');
         console.log('----------------');
 
+        player1nameme.innerHTML = "Paper"
+
         my_point++
 
         player1PointPanel.innerHTML = `Point: ${my_point}`
+
+
 
         winOrLoseInfoPanel1.innerHTML = 'WIN'
         winOrLoseInfoPanel2.innerHTML = 'LOSE'
@@ -72,6 +80,8 @@ function startGame(e) {
 
         player1PointPanel.innerHTML = `Point: ${my_point}`
 
+        player1nameme.innerHTML = "Rock"
+
         winOrLoseInfoPanel1.innerHTML = 'WIN'
         winOrLoseInfoPanel2.innerHTML = 'LOSE'
 
@@ -92,6 +102,8 @@ function startGame(e) {
 
         player1PointPanel.innerHTML = `Point: ${my_point}`
 
+        player1nameme.innerHTML = "Scissors"
+
         winOrLoseInfoPanel1.innerHTML = 'WIN'
         winOrLoseInfoPanel2.innerHTML = 'LOSE'
 
@@ -109,6 +121,8 @@ function startGame(e) {
         console.log('----------------');
 
         comp_point++
+
+        player2namecomp.innerHTML = "R/P/S"
 
         player2PointPanel.innerHTML = `Point: ${comp_point}`
         winOrLoseInfoPanel1.innerHTML = 'LOSE'
